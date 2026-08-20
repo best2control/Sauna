@@ -44,8 +44,8 @@
 .led-mini-label { margin-top: 4px; }
 
 .led-node { 
-    width: 12px; 
-    height: 12px; 
+    width: 18px; 
+    height: 18px; 
     border-radius: 50%; 
     background-color: #d1d5db; 
     box-shadow: none; 
