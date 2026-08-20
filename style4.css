@@ -1,0 +1,90 @@
+
+.water-parameter-form-box {
+    margin-top: 20px;
+    border-radius: 14px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.water-parameter-form-box.themed-hot-panel {
+    background-color: #fbeee4 !important;
+    border-color: #f3ceb6 !important;
+}
+.water-parameter-form-box.themed-hot-panel .water-form-header { color: #9a4312 !important; }
+.water-parameter-form-box.themed-hot-panel label { color: #9a4312 !important; font-size: 11px; font-weight: 700; }
+.water-parameter-form-box.themed-hot-panel input[type="number"],
+.water-parameter-form-box.themed-hot-panel input[type="time"] { background-color: #fff9f5 !important; border: 1px solid #f3ceb6; }
+
+.water-parameter-form-box.themed-cold-panel {
+    background-color: #bae6fd !important;
+    border-color: #93c5fd !important;
+}
+.water-parameter-form-box.themed-cold-panel .water-form-header { color: #1e40af !important; }
+.water-parameter-form-box.themed-cold-panel label { color: #1e40af !important; font-size: 11px; font-weight: 700; }
+.water-parameter-form-box.themed-cold-panel input[type="number"],
+.water-parameter-form-box.themed-cold-panel input[type="time"] { background-color: #f0f9ff !important; border: 1px solid #93c5fd; }
+
+.water-form-header { font-size: 15px; font-weight: 800; margin-bottom: 16px; letter-spacing: 0.3px; }
+.water-control-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; }
+.water-toggle-group { display: flex; flex-direction: column; gap: 6px; width: 40%; }
+.water-slider-group { display: flex; flex-direction: column; gap: 6px; width: 60%; }
+
+.water-range-slider {
+    width: 100%; height: 6px; background: #d1d5db; border-radius: 4px; outline: none; -webkit-appearance: none;
+}
+.water-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: #1a1a1a; cursor: pointer;
+}
+
+.water-time-inputs { display: flex; gap: 10px; width: 60%; }
+.time-box-item { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+
+.water-ntc-grid-layout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; width: 100%; margin-top: 16px; }
+.water-input-item { display: flex; flex-direction: column; gap: 6px; }
+
+input[type="number"], input[type="time"] {
+    width: 100%; padding: 8px 12px; border-radius: 8px; color: #000000; font-size: 13px; font-weight: 600; outline: none;
+}
+input:disabled, input.time-disabled { opacity: 0.4 !important; cursor: not-allowed; background-color: #e5e7eb !important; color: #9ca3af !important; }
+
+.water-action-end { display: flex; justify-content: flex-end; margin-top: 16px; }
+.water-form-save-btn {
+    background-color: #1a1a1a; color: #ffffff; border: none; border-radius: 10px; padding: 10px 24px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.15s;
+}
+.water-form-save-btn:hover { transform: scale(1.02); background-color: #000000; }
+
+.sauna-switch { position: relative; display: inline-block; width: 44px; height: 22px; }
+.sauna-switch input { opacity: 0; width: 0; height: 0; }
+.sauna-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .3s; border-radius: 22px; }
+.sauna-slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; }
+input:checked + .sauna-slider { background-color: #1a1a1a; }
+input:checked + .sauna-slider:before { transform: translateX(22px); }
+
+@media screen and (max-width: 600px) {
+    .water-control-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .water-toggle-group, .water-slider-group, .water-time-inputs { width: 100% !important; }
+    .water-ntc-grid-layout { grid-template-columns: 1fr !important; gap: 12px; }
+    .water-form-save-btn { width: 100%; text-align: center; }
+}
+
+.save-success-toast {
+    font-size: 12px;
+    font-weight: 700;
+    color: #16a34a !important; /* สีเขียวเข้มแจ้งเตือนสำเร็จ */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out; /* แอนิเมชันจางหายแบบนุ่มนวล */
+    white-space: nowrap;
+}
+
+.save-success-toast.show-toast {
+    opacity: 1; /* สว่างขึ้นมาทันทีเมื่อเซฟสำเร็จและคลายล็อก */
+}
+
+.config-emoji-dot {
+    font-size: 14px !important; /* ขนาดพอดีสายตา กินพื้นที่แนวนอนน้อยมาก ไม่ดันตัวหนังสือล้นจอ */
+    margin-left: 6px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;     /* จัดแกนสมดุลให้อยู่กึ่งกลางบรรทัดพอดีไอคอนหลัก */
+}

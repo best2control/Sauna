@@ -1,0 +1,347 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding: 10px 5% 20px 5%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tab-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fdfbf7;
+    border-radius: 24px;
+    padding: 16px 24px 24px 24px;
+    box-shadow: 0 10px 40px rgba(139, 92, 26, 0.03);
+    border: 1px solid #f5ece1;
+}
+
+.tab-header {
+    display: flex;
+    background-color: #f5f2eb;
+    padding: 6px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #8c8273;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.tab-button.active {
+    background-color: #ffffff;
+    color: #c25e00;
+    box-shadow: 0 4px 12px rgba(194, 94, 0, 0.08);
+}
+
+.tab-container .tab-content {
+    width: 100%;
+}
+
+.tab-panel {
+    display: none;
+    animation: cleanFade 0.3s ease-out;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    width: 100%;
+}
+
+.layout-row-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 4%;
+    width: 100%;
+}
+
+.layout-row-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10%; 
+    margin-top: 4%; 
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 4%; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.card-hot-water { 
+    width: 52%; 
+    height: 155px; 
+    margin-right: 1%; 
+    margin-top: 3%; 
+}
+
+.card-cold-water { 
+    width: 48%; 
+    height: 185px; 
+    margin-top: 0%; 
+}
+
+.card-sauna-room { 
+    width: 55%; 
+    height: 175px; 
+    container-type: size;
+}
+
+.card-art-purple { 
+    width: 42%; 
+    height: 115px;
+    margin-right: 1%; 
+    margin-top: 7%; 
+    justify-content: center;
+    align-items: flex-start;
+    padding: 14px;
+}
+
+.card-title {
+    font-weight: 700;
+    z-index: 2;
+    line-height: 1.2;
+}
+
+.card-value {
+    font-weight: 800;
+    z-index: 2;
+    letter-spacing: -1px;
+}
+
+.geo-shape {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.95;
+}
+
+.card-hot {
+    background-color: #fbeee4;
+    border-color: #f3ceb6;
+}
+
+.card-hot .card-title { color: #9a4312; }
+.card-hot .card-value { color: #c25e00; }
+
+.card-sauna-room.card-hot {
+    background-color: #fce7e6;
+    border-color: #f1b3b0;
+}
+
+.card-sauna-room.card-hot .card-title {
+    font-size: 26px; 
+    color: #7f1d1d;
+}
+
+.card-sauna-room.card-hot .card-value {
+    font-size: 46px; 
+    color: #991b1b;
+}
+
+.card-cold {
+    background-color: #bae6fd !important; 
+    border-color: #e2e8f4;
+}
+.card-cold .card-title { color: #1e40af !important; }
+.card-cold .card-value { color: #1d4ed8 !important; }
+
+.card-art-purple {
+    background-color: #eae6f5;
+    border-color: #ded7f0;
+    border-radius: 20px;
+}
+
+.card-hot-water .geo-shape {
+    right: 0%;
+    top: 0%;
+    width: 84%;
+    height: 96%;
+    background-color: #f3ceb6;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(30deg);
+}
+
+.card-cold-water .geo-shape {
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 70%;
+    background-color: #f1f7fa !important; 
+}
+
+.card-sauna-room .geo-shape {
+    right: 0px;
+    bottom: 0px;
+    width: 100cqh; 
+    height: 100cqh; 
+    background-color: #f1b3b0;
+    border-radius: 50%;
+}
+
+.card-art-purple .geo-shape {
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 50%;
+    background-color: #bfaee3;
+    border-top-right-radius: 100%;
+}
+
+.timestamp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    z-index: 5;
+}
+
+.ts-item {
+    font-size: 14px; 
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.ts-hot-water { color: #9a4312; }
+.ts-cold-water { color: #216d8a; }
+.ts-sauna-room { color: #7f1d1d; }
+
+@keyframes cleanFade {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.main-page-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: #c25e00;          
+    margin-top: 4px;
+    margin-bottom: 24px;     
+    letter-spacing: 0.5px;
+}
+
+.sauna-icon {
+    display: inline-block;
+    margin-right: 8px;  
+    font-size: 16px;    
+    transition: all 0.4s ease; 
+}
+
+.sauna-icon.offline {
+    filter: grayscale(100%) brightness(80%) !important;
+    opacity: 0.5 !important;
+    text-shadow: none !important;
+    animation: none !important;
+}
+
+.sauna-icon.online {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+.sauna-icon.online[id="status-hot-water"] {
+    animation: hotIconPulse 1s infinite alternate ease-in-out;
+}
+
+.sauna-icon.online[id="status-cold-water"] {
+    animation: coldIconPulse 3s infinite ease-in-out;
+}
+
+.sauna-icon.online[id="status-sauna"] {
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.6) !important;
+    animation: none !important;
+}
+
+@keyframes hotIconPulse {
+    from { text-shadow: 0 0 2px rgba(249, 115, 22, 0.3); transform: scale(0.95); }
+    to { text-shadow: 0 0 12px rgba(249, 115, 22, 0.9), 0 0 4px rgba(239, 68, 68, 0.5); transform: scale(1.05); }
+}
+@keyframes coldIconPulse {
+    0%, 100% { text-shadow: 0 0 2px rgba(59, 130, 246, 0.2); opacity: 0.8; }
+    50% { text-shadow: 0 0 14px rgba(59, 130, 246, 0.8), 0 0 4px rgba(6, 182, 212, 0.4); opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+    body { padding: 10px 4% 20px 4%; }
+    .tab-container { padding: 12px 14px 20px 14px; border-radius: 16px; }
+    .main-page-title { font-size: 22px; margin-bottom: 16px; }
+
+    .layout-row-top, .layout-row-bottom {
+        flex-direction: column;
+        gap: 12px;           
+        width: 100%;
+        padding-left: 0% !important;  
+        margin-top: 0% !important;    
+    }
+    .layout-row-bottom { margin-top: 12px !important; }
+
+    .card-hot-water, .card-cold-water, .card-sauna-room {
+        width: 100% !important;
+        height: 125px !important;     
+        margin-right: 0% !important;
+        margin-top: 0% !important;
+        padding: 16px !important;     
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .card-hot-water, .card-sauna-room { justify-content: space-between !important; }
+    .card-cold-water { justify-content: flex-start !important; gap: 8px !important; }
+    .card-cold-water .card-value:first-child { display: none !important; }
+
+    .card-hot-water .card-title { text-align: center !important; width: 100% !important; align-self: center !important; }
+    .card-cold-water .card-title { text-align: left !important; align-self: flex-start !important; }
+    .card-sauna-room.card-hot .card-title { text-align: right !important; width: 100% !important; align-self: flex-end !important; }
+
+    .card-hot-water .card-title, .card-cold-water .card-title, .card-sauna-room.card-hot .card-title {
+        font-size: 22px !important; font-weight: 700; z-index: 2; line-height: 1.2;
+    }
+
+    #HotWaterTemp, #ColdWaterTemp, #SaunaRoomTemp {
+        font-size: 36px !important; font-weight: 800; z-index: 2; letter-spacing: -1px;
+    }
+
+    #ColdWaterTemp { align-self: flex-end !important; margin-top: auto !important; }
+    #HotWaterTemp { align-self: flex-start !important; }
+
+    .card-art-purple { width: 100% !important; height: auto !important; min-height: 115px; margin-right: 0% !important; margin-top: 0% !important; padding: 14px !important; }
+    .card-sauna-room .geo-shape { width: 100cqh !important; height: 100cqh !important; }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .tab-container { max-width: 95%; }
+}

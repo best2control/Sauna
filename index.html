@@ -1,0 +1,221 @@
+<!--"
+https://unpkg.com/mqtt/dist/mqtt.min.js
+"-->
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Minimalist Sauna - Fixed Exact Layout</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style3.css">
+	<link rel="stylesheet" href="style4.css">
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@msgpack/msgpack@3.0.0-beta2/dist.es5+umd/msgpack.min.js"></script>
+</head>
+<body>
+
+	<div class="tab-container">
+		<h1 class="main-page-title">มหาชัย ซาวน่า</h1>
+		<div class="tab-content">
+			<div class="dashboard-layout">
+				<div class="layout-row-top">
+					<div class="info-card card-hot card-hot-water" onclick="window.toggleControlPanel('panel-hot')" style="justify-content: flex-start; gap: 4px; cursor: pointer;">
+						<span class="card-value" id="HotWaterTemp" style="align-self: flex-start; font-size: 36px;">--°C</span>
+						<span class="card-title" style="align-self: center; margin-top: auto; font-size: 22px;">♨️ บ่อน้ำร้อน</span>
+						<span class="card-value" style="align-self: flex-start; font-size: 36px;">&nbsp;</span>
+						<div class="geo-shape"></div>
+					</div>
+					<div class="info-card card-cold card-cold-water" onclick="window.toggleControlPanel('panel-cold')" style="justify-content: space-between; cursor: pointer;">
+						<span class="card-value" style="align-self: flex-start; font-size: 36px;">&nbsp;</span>
+						<span class="card-title" style="align-self: center; font-size: 26px;">❄️ บ่อน้ำเย็น</span>
+						<span class="card-value" id="ColdWaterTemp" style="align-self: flex-end; font-size: 42px;">--°C</span>
+						<div class="geo-shape"></div>
+					</div>
+				</div>
+				<div class="layout-row-bottom">
+					<div class="info-card card-hot card-sauna-room" onclick="window.toggleControlPanel('panel-sauna')" style="justify-content: space-between; cursor: pointer;">
+						<span class="card-value" style="align-self: flex-start; font-size: 10px;">&nbsp;</span>
+						<span class="card-title" style="align-self: flex-end; padding-right: 5px; font-size: 26px;">🧱 ห้องซาวน่า</span>
+						<span class="card-value" id="SaunaRoomTemp" style="align-self: flex-start; margin-top: auto; font-size: 46px;">--°C</span>
+						<span class="card-value" style="align-self: flex-start; font-size: 36px;">&nbsp;</span>
+						<div class="geo-shape"></div>
+					</div>
+					
+					<div class="info-card card-art-purple">
+						<div class="timestamp-container">
+							<div class="ts-item ts-hot-water"><span>Status :</span></div>	
+							<div class="ts-item ts-hot-water">
+								<span class="sauna-icon offline" id="status-hot-water">♨️</span>
+								<!-- ดวงไฟวงกลมสถานะ Config บ่อน้ำร้อน (เริ่มต้นเป็นสีเทา ⚪) -->
+								<span id="config-status-hot" class="config-emoji-dot">⚪</span>
+								<span id="ts-hot">--:--:--</span>
+							</div>
+							<div class="ts-item ts-cold-water">
+								<span class="sauna-icon offline" id="status-cold-water">❄️</span>
+								<!-- ดวงไฟวงกลมสถานะ Config บ่อน้ำเย็น (เริ่มต้นเป็นสีเทา ⚪) -->
+								<span id="config-status-cold" class="config-emoji-dot">⚪</span>
+								<span id="ts-cold">--:--:--</span>
+							</div>
+							<div class="ts-item ts-sauna-room">
+								<span class="sauna-icon offline" id="status-sauna">🧱</span>
+								<!-- ดวงไฟวงกลมสถานะ Config ห้องซาวน่า (เริ่มต้นเป็นสีเทา ⚪) -->
+								<span id="config-status-sauna" class="config-emoji-dot">⚪</span>
+								<span id="ts-sauna">--:--:--</span>
+							</div>
+						</div>
+						<div class="geo-shape"></div>
+					</div>
+
+                </div>
+			</div> 
+		</div> 
+		
+		<hr style="border: 0; border-top: 1px solid #efeae4; margin: 24px 0;">
+
+		<div class="sauna-container-v2">
+			<div id="login-box" class="login-wrapper-box" style="padding: 16px; border-radius: 16px;">
+				<button id="loginBtn" class="google-login-action-btn" style="margin: 0; padding: 10px 20px; font-size: 13px;">เข้าสู่ระบบด้วย Google</button>
+			</div>
+			<div id="main-content" class="authenticated-panel-content">
+				<div class="user-status-strip" style="display: flex; justify-content: space-between; align-items: center; padding: 6px 12px;">
+					<span id="ShowUser">กำลังตรวจสอบสถานะระบบ...</span><button id="logoutBtn" class="system-logout-trigger-btn" style="padding: 6px 14px; font-size: 11px; margin: 0;">ออกจากระบบ (Logout)</button>
+				</div>
+				<div class="sub-tab-content">
+					<div id="panel-sauna" class="dynamic-control-panel">
+						<div class="control-panel-border-box">
+							<div class="control-panel-grid12x6">
+								<div class="grid-item-container area-r1-online"><div class="led-group-left"><div class="led-node red" id="led-9"></div><span class="led-mini-label">Online</span></div></div>
+								<div class="grid-item-container area-r1-overheat"><div class="led-node red" id="led-8"></div><span class="status-label">Overheat</span></div>
+								<div class="grid-item-container area-r1-wait"><div class="led-node red" id="led-2"></div><span class="status-label">Wait</span></div>
+								<div class="grid-item-container area-r1-interlock"><div class="led-node red" id="led-7"></div><span class="status-label">Interlock</span></div>
+								<div class="grid-item-container area-r1-lastupdate"><span class="status-label" id="panel-sauna-update">--:--:--</span></div>
+								<div class="grid-item-container area-r23-display-time"><div class="seven-segment" id="sauna-timer">--:--</div><span class="display-label">Time Remaining</span></div>
+								<div class="grid-item-container area-r2-heater"><div class="led-node red" id="led-3"></div><span class="status-label" style="font-size: 14px !important;">⚡</span></div>
+								<div class="grid-item-container area-r3-ntc"><div class="led-node red" id="led-6"></div><span class="status-label" style="font-size: 14px !important;">🌡️</span></div>
+								<div class="grid-item-container area-r23-display-temp"><div class="seven-segment" id="sauna-temp">---°C</div><span class="display-label">Room Temperature</span></div>
+								<div class="grid-item-container area-r4-blank1"></div>
+								<div class="grid-item-container area-r4-led-a"><div class="led-node red" id="led-4"></div><span class="status-label">A</span></div>
+								<div class="grid-item-container area-r4-led-b"><div class="led-node red" id="led-5"></div><span class="status-label">B</span></div>
+								<div class="grid-item-container area-r4-led-light"><div class="led-node red" id="led-1"></div><span class="status-label">Light</span></div>
+								<div class="grid-item-container area-r4-blank2"></div>
+								<div class="grid-item-container area-r56-btn-cf"><button class="btn-panel btn-circle-unit" id="btn-unit"><div class="unit-toggle-top-row">°C</div><div class="unit-toggle-bottom-row">°F</div></button></div>
+								<div class="grid-item-container area-r56-btn-mode"><button class="btn-panel btn-circle-text" id="btn-mode">MODE</button></div>
+								<div class="grid-item-container area-r56-btn-light"><button class="btn-panel btn-circle-text" id="btn-light">LIGHT</button></div>
+								<div class="grid-item-container area-r56-btn-power"><button class="btn-panel btn-circle-stop" id="btn-power"><span class="red-square-icon"></span></button></div>
+							</div>
+						</div>
+							
+						<div class="sauna-parameter-form-box">
+							<h3 class="form-section-header">การตั้งค่าพารามิเตอร์ระบบซาวน่า</h3>
+							<div class="form-inputs-layout-grid">
+								<div class="input-field-group">
+									<label>อุณหภูมิเป้าหมาย</label>
+									<input type="number" id="input-temp-target" min="25" max="115" step="1" placeholder="50">
+								</div>
+								<div class="input-field-group">
+									<label>ความต่างอุณหภูมิ</label>
+									<input type="number" id="input-hysteresis" min="1" max="10" step="1" placeholder="1">
+								</div>
+								<div class="input-field-group">
+									<label>เวลา Count Down </label>
+									<div class="countdown-stepper-container" style="display: flex; align-items: center; gap: 4px; width: 100%;">
+										<button type="button" id="btn-countdown-minus" class="sauna-step-action-btn">-</button>
+										<input type="text" id="input-countdown" placeholder="01:00" readonly style="text-align: center; font-family: monospace; font-weight: 700; flex: 1;">
+										<button type="button" id="btn-countdown-plus" class="sauna-step-action-btn">+</button>
+									</div>
+								</div>
+								<div class="input-field-group">
+									<label>ค่าสัมประสิทธิ์ NTC Beta</label>
+									<input type="number" id="input-ntc-beta" step="1" placeholder="3950">
+								</div>
+								<div class="input-field-group">
+									<label>ค่าความต้านทาน NTCR25</label>
+									<input type="number" id="input-ntc-r25" step="1" placeholder="10000">
+								</div>
+								<div class="input-field-group">
+									<label>ตัวต้านทานอนุกรม RSeries</label>
+									<input type="number" id="input-rseries" step="1" placeholder="10000">
+								</div>
+							</div>
+							<div style="display: flex; justify-content: flex-end; margin-top: 16px;">
+								<span id="sauna-save-status" class="save-success-toast"></span><span>&nbsp;&nbsp;</span>
+								<button id="btn-save-sauna-config" class="sauna-form-save-btn">บันทึกตั้งค่าซาวน่า</button>
+							</div>
+						</div>
+					</div>
+					
+					<div id="panel-hot" class="dynamic-control-panel">
+						<div class="water-parameter-form-box themed-hot-panel">
+							<h3 class="water-form-header">ตู้ควบคุมระบบ บ่อน้ำร้อน</h3>
+							<div class="water-control-row">
+								<div class="water-toggle-group">
+									<label>เปิด-ปิด LED</label><label class="sauna-switch"><input type="checkbox" id="hot-toggle-led" checked><span class="sauna-slider"></span></label>
+								</div>
+								<div class="water-slider-group">
+									<label>ระดับความสว่าง LED: <span id="hot-label-bright">70</span> (brightness)</label><input type="range" id="hot-slider-bright" min="1" max="255" value="70" class="water-range-slider">
+								</div>
+							</div>
+							<div class="water-control-row" style="margin-top: 14px;">
+								<div class="water-toggle-group">
+									<label>ตั้งเวลาเปิด-ปิด</label><label class="sauna-switch"><input type="checkbox" id="hot-toggle-auto" checked><span class="sauna-slider"></span></label>
+								</div>
+								<div class="water-time-inputs">
+									<div class="time-box-item"><label>เวลาเปิด (ON)</label><input type="time" id="hot-time-on" value="09:00"></div>
+									<div class="time-box-item"><label>เวลาปิด (OFF)</label><input type="time" id="hot-time-off" value="09:01"></div>
+								</div>
+							</div>
+							<div class="water-ntc-grid-layout">
+								<div class="water-input-item"><label>NTC Beta</label><input type="number" id="hot-input-beta" placeholder="3545"></div>
+								<div class="water-input-item"><label>NTCR25</label><input type="number" id="hot-input-r25" placeholder="10000"></div>
+								<div class="water-input-item"><label>RFixed</label><input type="number" id="hot-input-rfixed" placeholder="10000"></div>
+							</div>
+							<div class="water-action-end">
+								<span id="hot-save-status" class="save-success-toast"></span><span>&nbsp;&nbsp;</span>
+								<button id="btn-save-hot-config" class="water-form-save-btn">บันทึกตั้งค่าน้ำร้อน</button>
+							</div>
+						</div>
+					</div>
+					<div id="panel-cold" class="dynamic-control-panel">
+						<div class="water-parameter-form-box themed-cold-panel">
+							<h3 class="water-form-header">ตู้ควบคุมระบบ บ่อน้ำเย็น</h3>
+							<div class="water-control-row">
+								<div class="water-toggle-group"><label>เปิด-ปิด LED</label><label class="sauna-switch"><input type="checkbox" id="cold-toggle-led" checked><span class="sauna-slider"></span></label></div>
+								<div class="water-slider-group"><label>ระดับความสว่าง LED: <span id="cold-label-bright">70</span> (brightness)</label><input type="range" id="cold-slider-bright" min="1" max="255" value="70" class="water-range-slider"></div>
+							</div>
+							<div class="water-control-row" style="margin-top: 14px;">
+								<div class="water-toggle-group">
+									<label>ตั้งเวลาเปิด-ปิด</label><label class="sauna-switch"><input type="checkbox" id="cold-toggle-auto" checked><span class="sauna-slider"></span></label>
+								</div>
+								<div class="water-time-inputs">
+									<div class="time-box-item"><label>เวลาเปิด (ON)</label><input type="time" id="cold-time-on" value="09:00"></div>
+									<div class="time-box-item"><label>เวลาปิด (OFF)</label><input type="time" id="cold-time-off" value="09:01"></div>
+								</div>
+							</div>
+							<div class="water-ntc-grid-layout">
+								<div class="water-input-item"><label>NTC Beta</label><input type="number" id="cold-input-beta" placeholder="3545"></div>
+								<div class="water-input-item"><label>NTCR25</label><input type="number" id="cold-input-r25" placeholder="10000"></div>
+								<div class="water-input-item"><label>RFixed</label><input type="number" id="cold-input-rfixed" placeholder="10000"></div>
+							</div>
+							<div class="water-action-end">
+								<span id="cold-save-status" class="save-success-toast"></span><span>&nbsp;&nbsp;</span>
+								<button id="btn-save-cold-config" class="water-form-save-btn">บันทึกตั้งค่าน้ำเย็น</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script type="module" src="app-control.js"></script> 
+    <script type="module" src="app-read.js"></script>  
+    <script type="module" src="sauna-read.js"></script>
+    <script type="module" src="sauna-send.js"></script>
+    <script type="module" src="water-read.js"></script>
+    <script type="module" src="water-send.js"></script>
+</body>
+</html>

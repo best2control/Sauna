@@ -1,0 +1,105 @@
+
+.sauna-container-v2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-status-strip {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #f5f2eb;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #8c8273;
+    margin-bottom: 16px;
+    border: 1px solid #f5ece1;
+}
+
+#login-box {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f5ece1;
+}
+
+#main-content {
+    display: none;
+    margin-top: 24px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 24px;
+    padding: 4%; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.login-instruction {
+    font-size: 14px;
+    font-weight: 500;
+    color: #615a51;
+    margin-bottom: 20px;
+}
+
+.google-login-action-btn {
+    padding: 10px 20px;
+    background-color: #c25e00;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(194, 94, 0, 0.15);
+    transition: all 0.2s ease;
+}
+.google-login-action-btn:hover { background-color: #a44b00; }
+
+.sub-tab-content { 
+    width: 100%; 
+}
+
+.blank-panel-placeholder { 
+    width: 100%; 
+    padding: 60px 24px; 
+    text-align: center; 
+    background-color: transparent !important; 
+    font-size: 14px; 
+    font-weight: 700; 
+}
+
+.system-logout-trigger-btn {
+    padding: 10px 20px;
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.system-logout-trigger-btn:hover { background-color: #dc2626; }
+
+.dynamic-control-panel {
+    display: none !important; 
+    width: 100%;
+    animation: cleanPanelSlide 0.35s ease-out; 
+}
+
+.dynamic-control-panel.panel-show {
+    display: block !important;
+}
+
+@keyframes cleanPanelSlide {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+    #login-box { padding: 16px; }
+    #main-content { border-radius: 16px; padding: 16px 12px; }
+}
