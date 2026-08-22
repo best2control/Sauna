@@ -1,1 +1,346 @@
-const a4_0x140acb=a4_0xe9d9;function a4_0xe9d9(_0x5992d1,_0x202b49){_0x5992d1=_0x5992d1-0x12b;const _0x522721=a4_0x45f6();let _0x161bcc=_0x522721[_0x5992d1];return _0x161bcc;}(function(_0x441833,_0x54e3cc){const _0x4660ec=a4_0xe9d9,_0x426be3=_0x441833();while(!![]){try{const _0x8055e2=parseInt(_0x4660ec(0x184))/0x1+parseInt(_0x4660ec(0x181))/0x2+-parseInt(_0x4660ec(0x166))/0x3+-parseInt(_0x4660ec(0x16a))/0x4+-parseInt(_0x4660ec(0x165))/0x5+-parseInt(_0x4660ec(0x16f))/0x6+parseInt(_0x4660ec(0x15f))/0x7;if(_0x8055e2===_0x54e3cc)break;else _0x426be3['push'](_0x426be3['shift']());}catch(_0xf98012){_0x426be3['push'](_0x426be3['shift']());}}}(a4_0x45f6,0xe15f9));const a4_0x30c24b=(function(){let _0x24c0c0=!![];return function(_0x87d37d,_0x198b20){const _0x1fd1dd=_0x24c0c0?function(){const _0x4219fc=a4_0xe9d9;if(_0x198b20){const _0x6d090e=_0x198b20[_0x4219fc(0x133)](_0x87d37d,arguments);return _0x198b20=null,_0x6d090e;}}:function(){};return _0x24c0c0=![],_0x1fd1dd;};}()),a4_0x161bcc=a4_0x30c24b(this,function(){const _0x38ddee=a4_0xe9d9;if(a4_0x161bcc[_0x38ddee(0x189)]()['toString']()['indexOf']('\x0a')!==-0x1)return;return a4_0x161bcc[_0x38ddee(0x137)]()[_0x38ddee(0x159)]('(((.+)+)+)+$')['toString']()[_0x38ddee(0x12f)](a4_0x161bcc)[_0x38ddee(0x159)](_0x38ddee(0x151));});function a4_0x45f6(){const _0x93c8b9=['1731506lZuLXe','led-8','function','1528510KyUQzW','led-node\x20green-on','log','RunTime','floor','bind','led-node\x20red-flash-active2s','isCntD','errThermo','show-toast','Beta','clearSaunaPanel','RSeries','isLight','led-node','led-2','Temp','lastSaunaFormState','constructor','unlockFormPanel','errI2C','.sauna-parameter-form-box','apply','input-ntc-beta','led-node\x20red-flash-active1s','panel-sauna-update','toString','isInterlock','🟢\x20บันทึกสำเร็จ','saunaReady','TempTarget','--:--','R25','[MQTT\x20Sauna]\x20First\x20data\x20loop\x20received.\x20Skipping\x20sauna\x20unlock\x20as\x20requested.','led-1','seven-segment\x20screen-on','input-ntc-r25','innerText','sauna-save-status','led-4','add','checkAllConfigsReady','syncPurpleCardDots','sysLockdown','led-5','updateSaunaData','saunaReflectionCount','Hyst','isF','classList','input-rseries','Sauna\x20Telemetry\x20Receiver\x20(sauna-read.js)\x20active.','(((.+)+)+)+$','value','sauna','padStart','style','getElementById','getElementsByClassName','activeElement','search','className','isHeater','led-node\x20red-flash-active500ms','led-9','led-node\x20yellow-on','1819496cmGULu','ntcStatus','forceSaunaSync','display','input-hysteresis','saunaExtensionData','337375aUmzIQ','2619291mltbJg','input-temp-target','seven-segment','unlockSaunaFormOnly','2691440rMZkpr','max','sauna-timer','sysMode','isOverHeat','705780eQRQmm','Hysteresis','updateSaunaStatus','led-6','led-node\x20blue-on','round','none','online','remove','led-node\x20red-on','led-7','NTCBeta','NTCR25','sauna-temp','block','isModeA','Countdown','---°C'];a4_0x45f6=function(){return _0x93c8b9;};return a4_0x45f6();}a4_0x161bcc(),window[a4_0x140acb(0x164)]={'TempTarget':0x32,'Hysteresis':0x1,'Countdown':0x3c,'NTCBeta':0xf6e,'NTCR25':0x2710,'RSeries':0x2710},window[a4_0x140acb(0x12e)]={'TempTarget':null,'Hysteresis':null,'Countdown':null,'NTCBeta':null,'NTCR25':null,'RSeries':null},window['saunaReady']=![],window[a4_0x140acb(0x161)]=!![],window[a4_0x140acb(0x171)]=function(_0x11c827,_0x5815e3){const _0x422d6f=a4_0x140acb,_0x39d091=document[_0x422d6f(0x156)](_0x422d6f(0x15d)),_0x2ae4b5=document[_0x422d6f(0x156)](_0x422d6f(0x136));if(_0x11c827===_0x422d6f(0x176)){if(_0x39d091)_0x39d091[_0x422d6f(0x15a)]=_0x422d6f(0x185);if(_0x2ae4b5)_0x2ae4b5[_0x422d6f(0x142)]=_0x5815e3;}else{if(_0x39d091)_0x39d091[_0x422d6f(0x15a)]=_0x422d6f(0x12b);if(typeof window[_0x422d6f(0x18f)]===_0x422d6f(0x183))window[_0x422d6f(0x18f)]();}},window[a4_0x140acb(0x14a)]=function(_0x4a25fb,_0x4bb051){const _0x1982da=a4_0x140acb,_0x4abb7e=document[_0x1982da(0x156)](_0x1982da(0x136));if(_0x4abb7e)_0x4abb7e['innerText']=_0x4bb051;window['saunaExtensionData'][_0x1982da(0x13b)]=_0x4a25fb['TempTarget']!==undefined?Math['floor'](_0x4a25fb[_0x1982da(0x13b)]):0x32,window[_0x1982da(0x164)][_0x1982da(0x170)]=_0x4a25fb['Hyst']!==undefined?parseInt(_0x4a25fb[_0x1982da(0x14c)]):0x1,window[_0x1982da(0x164)][_0x1982da(0x17f)]=_0x4a25fb['CntD']!==undefined?parseInt(_0x4a25fb['CntD']):0x3c,window[_0x1982da(0x164)][_0x1982da(0x17a)]=_0x4a25fb[_0x1982da(0x18e)]!==undefined?parseFloat(_0x4a25fb[_0x1982da(0x18e)]):0xf6e,window[_0x1982da(0x164)][_0x1982da(0x17b)]=_0x4a25fb[_0x1982da(0x13d)]!==undefined?parseFloat(_0x4a25fb[_0x1982da(0x13d)]):0x2710,window[_0x1982da(0x164)][_0x1982da(0x190)]=_0x4a25fb[_0x1982da(0x190)]!==undefined?parseFloat(_0x4a25fb[_0x1982da(0x190)]):0x2710;const _0xf90e81=document[_0x1982da(0x156)](_0x1982da(0x167)),_0x40d23b=document[_0x1982da(0x156)](_0x1982da(0x163)),_0x5af7ba=document[_0x1982da(0x156)]('input-countdown'),_0x1cbbb5=document[_0x1982da(0x156)](_0x1982da(0x134)),_0xb17c0d=document['getElementById'](_0x1982da(0x141)),_0xfe48ad=document[_0x1982da(0x156)](_0x1982da(0x14f)),_0x43fc54=window['forceSaunaSync']===!![];if(_0xf90e81&&_0x4a25fb['TempTarget']!==undefined){const _0x28aa44=Math[_0x1982da(0x188)](_0x4a25fb['TempTarget']);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x13b)]!==_0x28aa44)&&(_0xf90e81[_0x1982da(0x152)]=_0x28aa44,window[_0x1982da(0x12e)][_0x1982da(0x13b)]=_0x28aa44);}if(_0x40d23b&&_0x4a25fb[_0x1982da(0x14c)]!==undefined){const _0x2e65b3=parseInt(_0x4a25fb[_0x1982da(0x14c)]);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x170)]!==_0x2e65b3)&&(_0x40d23b['value']=_0x2e65b3,window[_0x1982da(0x12e)][_0x1982da(0x170)]=_0x2e65b3);}if(_0x5af7ba&&_0x4a25fb['CntD']!==undefined){const _0x16427c=parseInt(_0x4a25fb['CntD']);if(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x17f)]!==_0x16427c){const _0x1a1379=String(Math[_0x1982da(0x188)](_0x16427c/0x3c))['padStart'](0x2,'0'),_0x27a5e3=String(_0x16427c%0x3c)[_0x1982da(0x154)](0x2,'0');_0x5af7ba[_0x1982da(0x152)]=_0x1a1379+':'+_0x27a5e3,window['lastSaunaFormState'][_0x1982da(0x17f)]=_0x16427c;}}if(_0x1cbbb5&&document['activeElement']!==_0x1cbbb5){if(_0x4a25fb[_0x1982da(0x18e)]!==undefined){const _0x1a4bf0=Math[_0x1982da(0x188)](_0x4a25fb[_0x1982da(0x18e)]);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x17a)]!==_0x1a4bf0)&&(_0x1cbbb5[_0x1982da(0x152)]=_0x1a4bf0,window[_0x1982da(0x12e)]['NTCBeta']=_0x1a4bf0);}else _0x1cbbb5[_0x1982da(0x152)]===''&&(_0x1cbbb5[_0x1982da(0x152)]=0xf6e,window[_0x1982da(0x12e)][_0x1982da(0x17a)]=0xf6e);}if(_0xb17c0d&&document[_0x1982da(0x158)]!==_0xb17c0d){if(_0x4a25fb[_0x1982da(0x13d)]!==undefined){const _0x3e7e2b=Math['floor'](_0x4a25fb[_0x1982da(0x13d)]);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x17b)]!==_0x3e7e2b)&&(_0xb17c0d[_0x1982da(0x152)]=_0x3e7e2b,window[_0x1982da(0x12e)]['NTCR25']=_0x3e7e2b);}else _0xb17c0d['value']===''&&(_0xb17c0d[_0x1982da(0x152)]=0x2710,window[_0x1982da(0x12e)][_0x1982da(0x17b)]=0x2710);}if(_0xfe48ad&&document[_0x1982da(0x158)]!==_0xfe48ad){if(_0x4a25fb[_0x1982da(0x190)]!==undefined){const _0x1f0d01=Math[_0x1982da(0x188)](_0x4a25fb[_0x1982da(0x190)]);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x190)]!==_0x1f0d01)&&(_0xfe48ad[_0x1982da(0x152)]=_0x1f0d01,window['lastSaunaFormState'][_0x1982da(0x190)]=_0x1f0d01);}else _0xfe48ad[_0x1982da(0x152)]===''&&(_0xfe48ad[_0x1982da(0x152)]=0x2710,window[_0x1982da(0x12e)][_0x1982da(0x190)]=0x2710);}if(!window[_0x1982da(0x13a)]){window[_0x1982da(0x13a)]=!![];if(typeof window[_0x1982da(0x146)]===_0x1982da(0x183))window['checkAllConfigsReady']();}const _0x1155c9=document['getElementById'](_0x1982da(0x13f));if(_0x1155c9&&_0x4a25fb[_0x1982da(0x191)]!==undefined){const _0x439bf9=_0x4a25fb['isLight']===0x1?_0x1982da(0x173):_0x1982da(0x12b);if(_0x1155c9[_0x1982da(0x15a)]!==_0x439bf9)_0x1155c9[_0x1982da(0x15a)]=_0x439bf9;}const _0x1fbb5f=document['querySelector'](_0x1982da(0x132));if(_0x4a25fb[_0x1982da(0x16d)]===undefined||_0x4a25fb['sysMode']!==0x2){const _0x2a6f14=document[_0x1982da(0x156)](_0x1982da(0x17c)),_0x4d724f=document[_0x1982da(0x156)](_0x1982da(0x16c));_0x2a6f14&&(_0x2a6f14[_0x1982da(0x15a)]=_0x1982da(0x168),_0x2a6f14[_0x1982da(0x142)]=_0x1982da(0x180));_0x4d724f&&(_0x4d724f[_0x1982da(0x15a)]=_0x1982da(0x168),_0x4d724f['innerText']=_0x1982da(0x13c));_0x1fbb5f&&(_0x1fbb5f['style'][_0x1982da(0x162)]=_0x1982da(0x175));const _0x4329ea=document[_0x1982da(0x157)](_0x1982da(0x12b));for(let _0x52c03f=0x0;_0x52c03f<_0x4329ea['length'];_0x52c03f++){_0x4329ea[_0x52c03f]['id']!==_0x1982da(0x13f)&&_0x4329ea[_0x52c03f]['id']!==_0x1982da(0x15d)&&(_0x4329ea[_0x52c03f][_0x1982da(0x15a)]=_0x1982da(0x12b));}if(_0x4a25fb[_0x1982da(0x16d)]===undefined){if(typeof window[_0x1982da(0x130)]===_0x1982da(0x183))window[_0x1982da(0x130)](_0x1982da(0x153));if(typeof window['unlockSaunaFormOnly']===_0x1982da(0x183))window[_0x1982da(0x169)]();window['forceSaunaSync']=![];return;}}if(_0x4a25fb[_0x1982da(0x16d)]===0x2){_0x1fbb5f&&(_0x1fbb5f[_0x1982da(0x155)][_0x1982da(0x162)]=_0x1982da(0x17d));const _0x318ecf=document[_0x1982da(0x156)](_0x1982da(0x17c)),_0x268fab=document[_0x1982da(0x156)](_0x1982da(0x16c)),_0x13e943=document['getElementById'](_0x1982da(0x12c)),_0x2b2485=document[_0x1982da(0x156)]('led-3'),_0x4567d6=document[_0x1982da(0x156)](_0x1982da(0x144)),_0xc9a381=document[_0x1982da(0x156)](_0x1982da(0x149)),_0x586f83=document['getElementById'](_0x1982da(0x172)),_0x2b0aba=document[_0x1982da(0x156)](_0x1982da(0x179)),_0x58c1fd=document['getElementById'](_0x1982da(0x182));if(_0x318ecf&&_0x4a25fb[_0x1982da(0x12d)]!==undefined){_0x318ecf[_0x1982da(0x15a)]='seven-segment\x20screen-on';if(_0x4a25fb[_0x1982da(0x14d)]===0x1){const _0x34e856=Math[_0x1982da(0x174)](_0x4a25fb[_0x1982da(0x12d)]*0x9/0x5+0x20);if(_0x318ecf[_0x1982da(0x142)]!==_0x34e856+'°F')_0x318ecf['innerText']=_0x34e856+'°F';}else{const _0x2f21de=Math[_0x1982da(0x174)](_0x4a25fb['Temp']);if(_0x318ecf[_0x1982da(0x142)]!==_0x2f21de+'°C')_0x318ecf[_0x1982da(0x142)]=_0x2f21de+'°C';}}if(_0x268fab){let _0x57b6da=0x0;if(_0x4a25fb[_0x1982da(0x18b)]===0x1&&_0x4a25fb[_0x1982da(0x17f)]!==undefined&&_0x4a25fb['RunTime']!==undefined)_0x57b6da=Math[_0x1982da(0x16b)](0x0,_0x4a25fb[_0x1982da(0x17f)]-_0x4a25fb[_0x1982da(0x187)]-0x1);else _0x4a25fb[_0x1982da(0x187)]!==undefined&&(_0x57b6da=Math['max'](0x0,_0x4a25fb['RunTime']));const _0x2c1918=String(Math[_0x1982da(0x188)](_0x57b6da/0x3c))[_0x1982da(0x154)](0x2,'0'),_0x4d8de8=String(_0x57b6da%0x3c)[_0x1982da(0x154)](0x2,'0'),_0x7e7028=_0x2c1918+':'+_0x4d8de8;_0x268fab[_0x1982da(0x142)]!==_0x7e7028&&(_0x268fab[_0x1982da(0x15a)]=_0x1982da(0x140),_0x268fab[_0x1982da(0x142)]=_0x7e7028);}if(_0xf90e81&&_0x4a25fb['TempTarget']!==undefined){const _0x288a13=Math[_0x1982da(0x188)](_0x4a25fb['TempTarget']);(_0x43fc54||window[_0x1982da(0x12e)]['TempTarget']!==_0x288a13)&&(_0xf90e81[_0x1982da(0x152)]=_0x288a13,window[_0x1982da(0x12e)]['TempTarget']=_0x288a13);}if(_0x40d23b&&_0x4a25fb['Hysteresis']!==undefined){const _0x422d2c=parseInt(_0x4a25fb[_0x1982da(0x170)]);(_0x43fc54||window[_0x1982da(0x12e)]['Hysteresis']!==_0x422d2c)&&(_0x40d23b['value']=_0x422d2c,window[_0x1982da(0x12e)][_0x1982da(0x170)]=_0x422d2c);}if(_0x5af7ba&&_0x4a25fb[_0x1982da(0x17f)]!==undefined){const _0x55b655=parseInt(_0x4a25fb['Countdown']);if(_0x43fc54||window[_0x1982da(0x12e)]['Countdown']!==_0x55b655){const _0x5ba41a=String(Math['floor'](_0x55b655/0x3c))[_0x1982da(0x154)](0x2,'0'),_0x4df0f8=String(_0x55b655%0x3c)[_0x1982da(0x154)](0x2,'0');_0x5af7ba[_0x1982da(0x152)]=_0x5ba41a+':'+_0x4df0f8,window[_0x1982da(0x12e)][_0x1982da(0x17f)]=_0x55b655;}}if(_0x1cbbb5&&_0x4a25fb['NTCBeta']!==undefined){const _0x259d49=parseFloat(_0x4a25fb['NTCBeta']);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x17a)]!==_0x259d49)&&(_0x1cbbb5[_0x1982da(0x152)]=_0x259d49,window[_0x1982da(0x12e)]['NTCBeta']=_0x259d49);}if(_0xb17c0d&&_0x4a25fb[_0x1982da(0x17b)]!==undefined){const _0x2d4c76=parseFloat(_0x4a25fb[_0x1982da(0x17b)]);(_0x43fc54||window[_0x1982da(0x12e)][_0x1982da(0x17b)]!==_0x2d4c76)&&(_0xb17c0d[_0x1982da(0x152)]=_0x2d4c76,window[_0x1982da(0x12e)]['NTCR25']=_0x2d4c76);}if(_0xfe48ad&&_0x4a25fb[_0x1982da(0x190)]!==undefined){const _0x3c60eb=parseFloat(_0x4a25fb[_0x1982da(0x190)]);(_0x43fc54||window[_0x1982da(0x12e)]['RSeries']!==_0x3c60eb)&&(_0xfe48ad[_0x1982da(0x152)]=_0x3c60eb,window['lastSaunaFormState'][_0x1982da(0x190)]=_0x3c60eb);}if(_0x1155c9&&_0x4a25fb['isLight']!==undefined){const _0x2ce5cb=_0x4a25fb[_0x1982da(0x191)]===0x1?_0x1982da(0x173):_0x1982da(0x12b);if(_0x1155c9[_0x1982da(0x15a)]!==_0x2ce5cb)_0x1155c9[_0x1982da(0x15a)]=_0x2ce5cb;}if(_0x4a25fb['isHeater']!==undefined){if(_0x4a25fb[_0x1982da(0x15b)]===0x1){if(_0x2b2485&&_0x2b2485[_0x1982da(0x15a)]!==_0x1982da(0x15e))_0x2b2485[_0x1982da(0x15a)]=_0x1982da(0x15e);if(_0x13e943&&_0x13e943[_0x1982da(0x15a)]!==_0x1982da(0x12b))_0x13e943[_0x1982da(0x15a)]=_0x1982da(0x12b);}else{if(_0x2b2485&&_0x2b2485[_0x1982da(0x15a)]!=='led-node')_0x2b2485[_0x1982da(0x15a)]=_0x1982da(0x12b);if(_0x13e943&&_0x13e943[_0x1982da(0x15a)]!==_0x1982da(0x185))_0x13e943[_0x1982da(0x15a)]=_0x1982da(0x185);}}if(_0x4a25fb['isModeA']!==undefined){if(_0x4a25fb[_0x1982da(0x17e)]===0x1){if(_0x4567d6&&_0x4567d6[_0x1982da(0x15a)]!==_0x1982da(0x185))_0x4567d6[_0x1982da(0x15a)]=_0x1982da(0x185);if(_0xc9a381&&_0xc9a381[_0x1982da(0x15a)]!==_0x1982da(0x12b))_0xc9a381['className']=_0x1982da(0x12b);}else{if(_0x4567d6&&_0x4567d6[_0x1982da(0x15a)]!==_0x1982da(0x12b))_0x4567d6[_0x1982da(0x15a)]=_0x1982da(0x12b);if(_0xc9a381&&_0xc9a381[_0x1982da(0x15a)]!=='led-node\x20green-on')_0xc9a381['className']=_0x1982da(0x185);}}if(_0x586f83&&_0x4a25fb['errI2C']!==undefined&&_0x4a25fb['ntcStatus']!==undefined){let _0x1069f0=_0x1982da(0x12b);if(_0x4a25fb[_0x1982da(0x131)]===0x0&&(_0x4a25fb[_0x1982da(0x160)]===0x0||_0x4a25fb['ntcStatus']===0x1))_0x1069f0=_0x1982da(0x178);else{if(_0x4a25fb[_0x1982da(0x131)]===0x0&&(_0x4a25fb['ntcStatus']===0x2||_0x4a25fb[_0x1982da(0x160)]===0x3))_0x1069f0=_0x1982da(0x18a);else(_0x4a25fb['errI2C']===0x1||_0x4a25fb[_0x1982da(0x160)]===0x4||_0x4a25fb[_0x1982da(0x160)]===0x5)&&(_0x1069f0=_0x1982da(0x135));}if(_0x586f83['className']!==_0x1069f0)_0x586f83[_0x1982da(0x15a)]=_0x1069f0;}if(_0x2b0aba&&_0x4a25fb['isInterlock']!==undefined){const _0x5e933c=_0x4a25fb[_0x1982da(0x138)]===0x1?_0x1982da(0x178):_0x1982da(0x12b);if(_0x2b0aba[_0x1982da(0x15a)]!==_0x5e933c)_0x2b0aba[_0x1982da(0x15a)]=_0x5e933c;}if(_0x58c1fd&&_0x4a25fb['errThermo']!==undefined&&_0x4a25fb[_0x1982da(0x148)]!==undefined&&_0x4a25fb[_0x1982da(0x16e)]!==undefined){let _0x59356f='led-node';if(_0x4a25fb[_0x1982da(0x18c)]===0x1||_0x4a25fb[_0x1982da(0x148)]===0x1)_0x59356f=_0x1982da(0x15c);else _0x4a25fb[_0x1982da(0x16e)]===0x1&&(_0x59356f=_0x1982da(0x178));if(_0x58c1fd[_0x1982da(0x15a)]!==_0x59356f)_0x58c1fd[_0x1982da(0x15a)]=_0x59356f;}}if(!window['saunaReflectionCount'])window[_0x1982da(0x14b)]=0x0;if(window['saunaReflectionCount']===0x1)console[_0x1982da(0x186)](_0x1982da(0x13e)),window['saunaReflectionCount']=0x2;else{if(window[_0x1982da(0x14b)]===0x2){console[_0x1982da(0x186)]('[MQTT\x20Sauna]\x20Second\x20data\x20loop\x20received.\x20Confirming\x20sauna\x20action\x20and\x20unlocking\x20UI.'),window[_0x1982da(0x14b)]=0x0;const _0x4408df=document['querySelector'](_0x1982da(0x132)),_0x5ce3d2=_0x4408df&&_0x4408df[_0x1982da(0x155)]['pointerEvents']===_0x1982da(0x175);typeof window[_0x1982da(0x130)]===_0x1982da(0x183)&&window[_0x1982da(0x130)](_0x1982da(0x153));typeof window[_0x1982da(0x169)]===_0x1982da(0x183)&&window[_0x1982da(0x169)]();if(_0x5ce3d2){const _0x23c2b3=document['getElementById'](_0x1982da(0x143));_0x23c2b3&&(_0x23c2b3[_0x1982da(0x142)]=_0x1982da(0x139),_0x23c2b3[_0x1982da(0x14e)][_0x1982da(0x145)](_0x1982da(0x18d)),setTimeout(()=>{const _0x79b72=_0x1982da;_0x23c2b3[_0x79b72(0x14e)][_0x79b72(0x177)]('show-toast'),setTimeout(()=>{const _0xd68da0=_0x79b72;_0x23c2b3[_0xd68da0(0x142)]='';},0x190);},0xbb8));}}else typeof window[_0x1982da(0x130)]==='function'&&window[_0x1982da(0x130)](_0x1982da(0x153)),typeof window[_0x1982da(0x169)]===_0x1982da(0x183)&&window[_0x1982da(0x169)]();}if(!window['saunaReady']){window[_0x1982da(0x13a)]=!![];if(typeof window[_0x1982da(0x146)]===_0x1982da(0x183))window[_0x1982da(0x146)]();}typeof window[_0x1982da(0x147)]==='function'&&window[_0x1982da(0x147)](_0x1982da(0x153)),window['forceSaunaSync']=![];},console[a4_0x140acb(0x186)](a4_0x140acb(0x150));
+
+window.saunaExtensionData = {
+    TempTarget: 50.0,
+    Hysteresis: 1,
+    Countdown: 60,
+    NTCBeta: 3950.0,
+    NTCR25: 10000.0,
+    RSeries: 10000.0
+};
+
+window.lastSaunaFormState = {
+    TempTarget: null,
+    Hysteresis: null,
+    Countdown: null,
+    NTCBeta: null,
+    NTCR25: null,
+    RSeries: null
+};
+
+window.saunaReady = false;
+window.forceSaunaSync = true;
+
+window.updateSaunaStatus = function(status, timeStr) {
+    const led9 = document.getElementById('led-9');
+    const saunaUpdate = document.getElementById('panel-sauna-update');
+    
+    if (status === 'online') {
+        if (led9) led9.className = 'led-node green-on';
+        if (saunaUpdate) saunaUpdate.innerText = timeStr;
+    } else {
+        if (led9) led9.className = 'led-node';
+        if (typeof window.clearSaunaPanel === 'function') window.clearSaunaPanel();
+    }
+};
+
+window.updateSaunaData = function(data, timeStr) {
+    const saunaUpdate = document.getElementById('panel-sauna-update');
+    if (saunaUpdate) saunaUpdate.innerText = timeStr;
+	
+	window.saunaExtensionData.TempTarget = (data.TempTarget !== undefined) ? Math.floor(data.TempTarget) : 50.0;
+    window.saunaExtensionData.Hysteresis = (data.Hyst !== undefined) ? parseInt(data.Hyst) : 1;
+    window.saunaExtensionData.Countdown = (data.CntD !== undefined) ? parseInt(data.CntD) : 60;
+    window.saunaExtensionData.NTCBeta = (data.Beta !== undefined) ? parseFloat(data.Beta) : 3950.0;
+    window.saunaExtensionData.NTCR25 = (data.R25 !== undefined) ? parseFloat(data.R25) : 10000.0;
+    window.saunaExtensionData.RSeries = (data.RSeries !== undefined) ? parseFloat(data.RSeries) : 10000.0;
+
+    // ดึง Element กล่องอินพุตมารอไว้ด้านบนเพื่อใช้ซิงค์ค่าทันที
+    const inTarget = document.getElementById('input-temp-target');
+    const inHyst = document.getElementById('input-hysteresis');
+    const inCount = document.getElementById('input-countdown');
+    const inBeta = document.getElementById('input-ntc-beta');
+    const inR25 = document.getElementById('input-ntc-r25');
+    const inRSer = document.getElementById('input-rseries');
+    const force = (window.forceSaunaSync === true);
+
+    // 2. ปรับปรุง: ย้ายการซิงค์ค่าลงฟอร์มอินพุตขึ้นมาไว้ตรงนี้ เพื่อให้ซิงค์ได้ทุกโหมด (แม้ sysMode จะไม่ใช่ 2)
+    if (inTarget && data.TempTarget !== undefined) {
+        const nextVal = Math.floor(data.TempTarget);
+        if (force || window.lastSaunaFormState.TempTarget !== nextVal) {
+            inTarget.value = nextVal;
+            window.lastSaunaFormState.TempTarget = nextVal;
+        }
+    }
+    if (inHyst && data.Hyst !== undefined) {
+        const nextVal = parseInt(data.Hyst);
+        if (force || window.lastSaunaFormState.Hysteresis !== nextVal) {
+            inHyst.value = nextVal;
+            window.lastSaunaFormState.Hysteresis = nextVal;
+        }
+    }
+    if (inCount && data.CntD !== undefined) {
+        const nextVal = parseInt(data.CntD);
+        if (force || window.lastSaunaFormState.Countdown !== nextVal) {
+            const cHH = String(Math.floor(nextVal / 60)).padStart(2, '0');
+            const cMM = String(nextVal % 60).padStart(2, '0'); // <-- แก้ไขตัดคำเกินออกแล้ว
+            inCount.value = `${cHH}:${cMM}`;
+            window.lastSaunaFormState.Countdown = nextVal;
+        }
+    }
+    if (inBeta && document.activeElement !== inBeta) {
+        if (data.Beta !== undefined) {
+            const nextVal = Math.floor(data.Beta); // ดึงค่าเป็นจำนวนเต็มตามสเปกจริง
+            if (force || window.lastSaunaFormState.NTCBeta !== nextVal) {
+                inBeta.value = nextVal;
+                window.lastSaunaFormState.NTCBeta = nextVal;
+            }
+        } else if (inBeta.value === "") {
+            // ดักจับ: หากเปิดหน้ามาแล้วไม่มีค่าพารามิเตอร์ส่งมา ให้เติมค่าเริ่มต้นทันทีเพื่อความปลอดภัย
+            inBeta.value = 3950;
+            window.lastSaunaFormState.NTCBeta = 3950;
+        }
+    }
+
+    // ตรวจสอบช่องกรอก NTC R25
+    if (inR25 && document.activeElement !== inR25) {
+        if (data.R25 !== undefined) {
+            const nextVal = Math.floor(data.R25);
+            if (force || window.lastSaunaFormState.NTCR25 !== nextVal) {
+                inR25.value = nextVal;
+                window.lastSaunaFormState.NTCR25 = nextVal;
+            }
+        } else if (inR25.value === "") {
+            inR25.value = 10000;
+            window.lastSaunaFormState.NTCR25 = 10000;
+        }
+    }
+
+    // ตรวจสอบช่องกรอก RSeries
+    if (inRSer && document.activeElement !== inRSer) {
+        if (data.RSeries !== undefined) {
+            const nextVal = Math.floor(data.RSeries);
+            if (force || window.lastSaunaFormState.RSeries !== nextVal) {
+                inRSer.value = nextVal;
+                window.lastSaunaFormState.RSeries = nextVal;
+            }
+        } else if (inRSer.value === "") {
+            inRSer.value = 10000;
+            window.lastSaunaFormState.RSeries = 10000;
+        }
+    }
+
+    // 3. ปลดล็อกหน้าจอหลัก (แก้ปัญหาหน้าเว็บค้าง)
+    if (!window.saunaReady) {
+        window.saunaReady = true;
+        if (typeof window.checkAllConfigsReady === 'function') window.checkAllConfigsReady();
+    }
+
+    // 4. ตรวจสอบสถานะไฟ LED1 (Light) ดักจับไว้เพื่อให้แสดงผลได้ทุกโหมด
+    const led1 = document.getElementById('led-1');
+    if (led1 && data.isLight !== undefined) {
+        const targetClass = (data.isLight === 1) ? 'led-node blue-on' : 'led-node';
+        if (led1.className !== targetClass) led1.className = targetClass;
+    }
+
+	const saunaFormBox = document.querySelector('.sauna-parameter-form-box');
+	
+    // 5. ตรวจสอบเงื่อนไข sysMode (หากไม่ใช่โหมดทำงานปกติ ให้ล้างหน้าปัดตัวเลขและดับไฟดวงอื่นลงทันที)
+    if (data.sysMode === undefined || data.sysMode !== 2) {
+        const saunaTempScreen = document.getElementById('sauna-temp');
+        const saunaTimerScreen = document.getElementById('sauna-timer');
+        if (saunaTempScreen) { saunaTempScreen.className = 'seven-segment'; saunaTempScreen.innerText = '---°C'; }
+        if (saunaTimerScreen) { saunaTimerScreen.className = 'seven-segment'; saunaTimerScreen.innerText = '--:--'; }
+        
+		if (saunaFormBox) {
+            saunaFormBox.style.display = 'none';
+        }
+		
+        const nodes = document.getElementsByClassName("led-node");
+        for (let i = 0; i < nodes.length; i++) {
+            if (nodes[i].id !== 'led-1' && nodes[i].id !== 'led-9') {
+                nodes[i].className = 'led-node';
+            }
+        }
+		if(data.sysMode === undefined ){
+			if (typeof window.unlockFormPanel === 'function') window.unlockFormPanel('sauna');
+			if (typeof window.unlockSaunaFormOnly === 'function') window.unlockSaunaFormOnly();
+			window.forceSaunaSync = false;
+			return; 
+		}
+    }
+
+	if (data.sysMode === 2) {
+		if (saunaFormBox) {
+            saunaFormBox.style.display = 'block';
+        }
+		const saunaTempScreen = document.getElementById('sauna-temp');
+		const saunaTimerScreen = document.getElementById('sauna-timer');
+
+		
+		const led2 = document.getElementById('led-2');
+		const led3 = document.getElementById('led-3');
+		const led4 = document.getElementById('led-4');
+		const led5 = document.getElementById('led-5');
+		const led6 = document.getElementById('led-6');
+		const led7 = document.getElementById('led-7');
+		const led8 = document.getElementById('led-8');
+
+		if (saunaTempScreen && data.Temp !== undefined) {
+			saunaTempScreen.className = 'seven-segment screen-on';
+			if (data.isF === 1) {
+				const fValue = Math.round((data.Temp * 9 / 5) + 32);
+				if (saunaTempScreen.innerText !== fValue + '°F') saunaTempScreen.innerText = fValue + '°F';
+			} else {
+				const cValue =Math.round(data.Temp);
+				if (saunaTempScreen.innerText !== cValue + '°C') saunaTempScreen.innerText = cValue + '°C';
+			}
+		}
+
+		if (saunaTimerScreen) {
+			let totalMinutes = 0;
+			if (data.isCntD === 1 && data.Countdown !== undefined && data.RunTime !== undefined) {
+				totalMinutes = Math.max(0, data.Countdown - data.RunTime - 1);
+			} else if (data.RunTime !== undefined) {
+				totalMinutes = Math.max(0, data.RunTime);
+			}
+			
+			const hh = String(Math.floor(totalMinutes / 60)).padStart(2, '0');
+			const mm = String(totalMinutes % 60).padStart(2, '0');
+			const timeDisplayStr = `${hh}:${mm}`;
+			if (saunaTimerScreen.innerText !== timeDisplayStr) {
+				saunaTimerScreen.className = 'seven-segment screen-on';
+				saunaTimerScreen.innerText = timeDisplayStr;
+			}
+		}
+
+		if (inTarget && data.TempTarget !== undefined) {
+			const nextVal = Math.floor(data.TempTarget);
+			if (force || window.lastSaunaFormState.TempTarget !== nextVal) {
+				inTarget.value = nextVal;
+				window.lastSaunaFormState.TempTarget = nextVal;
+			}
+		}
+		if (inHyst && data.Hysteresis !== undefined) {
+			const nextVal = parseInt(data.Hysteresis);
+			if (force || window.lastSaunaFormState.Hysteresis !== nextVal) {
+				inHyst.value = nextVal;
+				window.lastSaunaFormState.Hysteresis = nextVal;
+			}
+		}
+		if (inCount && data.Countdown !== undefined) {
+			const nextVal = parseInt(data.Countdown);
+			if (force || window.lastSaunaFormState.Countdown !== nextVal) {
+				const cHH = String(Math.floor(nextVal / 60)).padStart(2, '0');
+				const cMM = String(nextVal % 60).padStart(2, '0');
+				inCount.value = `${cHH}:${cMM}`;
+				window.lastSaunaFormState.Countdown = nextVal;
+			}
+		}
+		if (inBeta && data.NTCBeta !== undefined) {
+			const nextVal = parseFloat(data.NTCBeta);
+			if (force || window.lastSaunaFormState.NTCBeta !== nextVal) {
+				inBeta.value = nextVal;
+				window.lastSaunaFormState.NTCBeta = nextVal;
+			}
+		}
+		if (inR25 && data.NTCR25 !== undefined) {
+			const nextVal = parseFloat(data.NTCR25);
+			if (force || window.lastSaunaFormState.NTCR25 !== nextVal) {
+				inR25.value = nextVal;
+				window.lastSaunaFormState.NTCR25 = nextVal;
+			}
+		}
+		if (inRSer && data.RSeries !== undefined) {
+			const nextVal = parseFloat(data.RSeries);
+			if (force || window.lastSaunaFormState.RSeries !== nextVal) {
+				inRSer.value = nextVal;
+				window.lastSaunaFormState.RSeries = nextVal;
+			}
+		}
+
+		if (led1 && data.isLight !== undefined) {
+			const targetClass = (data.isLight === 1) ? 'led-node blue-on' : 'led-node';
+			if (led1.className !== targetClass) led1.className = targetClass;
+		}
+		
+		if (data.isHeater !== undefined) {
+			if (data.isHeater === 1) {
+				if (led3 && led3.className !== 'led-node yellow-on') led3.className = 'led-node yellow-on';
+				if (led2 && led2.className !== 'led-node') led2.className = 'led-node';
+			} else {
+				if (led3 && led3.className !== 'led-node') led3.className = 'led-node';
+				if (led2 && led2.className !== 'led-node green-on') led2.className = 'led-node green-on';
+			}
+		}
+		
+		if (data.isModeA !== undefined) {
+			if (data.isModeA === 1) {
+				if (led4 && led4.className !== 'led-node green-on') led4.className = 'led-node green-on';
+				if (led5 && led5.className !== 'led-node') led5.className = 'led-node';
+			} else {
+				if (led4 && led4.className !== 'led-node') led4.className = 'led-node';
+				if (led5 && led5.className !== 'led-node green-on') led5.className = 'led-node green-on';
+			}
+		}
+
+		if (led6 && data.errI2C !== undefined && data.ntcStatus !== undefined) {
+			let targetClass = 'led-node';
+			if (data.errI2C === 0 && (data.ntcStatus === 0 || data.ntcStatus === 1)) {
+				targetClass = 'led-node red-on'; 
+				//targetClass = 'led-node red-flash-active1s'; 
+			} else if (data.errI2C === 0 && (data.ntcStatus === 2 || data.ntcStatus === 3)) {
+				targetClass = 'led-node red-flash-active2s'; 
+			} else if (data.errI2C === 1 || data.ntcStatus === 4 || data.ntcStatus === 5) {
+				targetClass = 'led-node red-flash-active1s'; 
+			}
+			if (led6.className !== targetClass) led6.className = targetClass;
+		}
+	   
+
+		if (led7 && data.isInterlock !== undefined) {
+			const targetClass = (data.isInterlock === 1) ? 'led-node red-on' : 'led-node';
+			if (led7.className !== targetClass) led7.className = targetClass;
+		}
+
+		if (led8 && data.errThermo !== undefined && data.sysLockdown !== undefined && data.isOverHeat !== undefined) {
+			let targetClass = 'led-node';
+			if (data.errThermo === 1 || data.sysLockdown===1) {
+			targetClass = 'led-node red-flash-active500ms';
+			}
+			else if (data.isOverHeat === 1) {
+				targetClass = 'led-node red-on';
+			} 
+			if (led8.className !== targetClass) led8.className = targetClass;
+		}
+		//led8.className ='led-node red-flash-active500ms';
+		
+		
+	}
+
+	if (!window.saunaReflectionCount) window.saunaReflectionCount = 0;
+
+	if (window.saunaReflectionCount === 1) {
+		console.log("[MQTT Sauna] First data loop received. Skipping sauna unlock as requested.");
+		window.saunaReflectionCount = 2;
+	} 
+	else if (window.saunaReflectionCount === 2) {
+		console.log("[MQTT Sauna] Second data loop received. Confirming sauna action and unlocking UI.");
+		window.saunaReflectionCount = 0;
+		const saunaFormBox = document.querySelector('.sauna-parameter-form-box'); const isFormLocked = saunaFormBox && saunaFormBox.style.pointerEvents === "none";
+		if (typeof window.unlockFormPanel === 'function') { window.unlockFormPanel('sauna'); }
+		if (typeof window.unlockSaunaFormOnly === 'function') { window.unlockSaunaFormOnly(); }
+
+		if (isFormLocked) {
+			const saveStatusEl = document.getElementById("sauna-save-status");
+			if (saveStatusEl) {
+				saveStatusEl.innerText = "🟢 บันทึกสำเร็จ"; saveStatusEl.classList.add("show-toast");
+				setTimeout(() => { saveStatusEl.classList.remove("show-toast"); setTimeout(() => { saveStatusEl.innerText = ""; }, 400); }, 3000);
+			}
+		}
+	} else {
+	if (typeof window.unlockFormPanel === 'function') { window.unlockFormPanel('sauna'); }
+		if (typeof window.unlockSaunaFormOnly === 'function') { window.unlockSaunaFormOnly(); }
+	}
+		
+	if (!window.saunaReady) {
+        window.saunaReady = true;
+        if (typeof window.checkAllConfigsReady === 'function') window.checkAllConfigsReady();
+    }
+    // ฝังเพิ่มตรงนี้ (Draft 25.3): รันประเมินสลับไฟวงกลมซาวน่าทุกรอบ 5 วินาทีปกติ หาก Ready สำเร็จจะติดไฟเขียว 🟢 นิ่งถาวรทนทาน
+    if (typeof window.syncPurpleCardDots === 'function') {
+        window.syncPurpleCardDots('sauna');
+    }
+    window.forceSaunaSync = false;
+};
+
+console.log("Sauna Telemetry Receiver (sauna-read.js) active.");
