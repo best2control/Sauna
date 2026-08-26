@@ -1,5 +1,9 @@
 <!--"
-https://unpkg.com/mqtt/dist/mqtt.min.js
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@msgpack/msgpack@3.0.0-beta2/dist.es5+umd/msgpack.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mqtt@5.15.2/build/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/msgpack@1.0.3/lib/msgpack.min.js"></script>
+
 "-->
 
 <!DOCTYPE html>
@@ -97,7 +101,10 @@ https://unpkg.com/mqtt/dist/mqtt.min.js
 								<div class="grid-item-container area-r2-heater"><div class="led-node red" id="led-3"></div><span class="status-label" style="font-size: 14px !important;">⚡</span></div>
 								<div class="grid-item-container area-r3-ntc"><div class="led-node red" id="led-6"></div><span class="status-label" style="font-size: 14px !important;">🌡️</span></div>
 								<div class="grid-item-container area-r23-display-temp"><div class="seven-segment" id="sauna-temp">---°C</div><span class="display-label">Room Temperature</span></div>
-								<div class="grid-item-container area-r4-blank1"></div>
+								<div class="grid-item-container area-r4-blank1">
+									<label class="sauna-switch"><input type="checkbox" id="Sauna-toggle-Display" checked><span class="sauna-slider"></span></label>
+									<span class="status-label">เปิด-ปิด Display</span>
+								</div>
 								<div class="grid-item-container area-r4-led-a"><div class="led-node red" id="led-4"></div><span class="status-label">A</span></div>
 								<div class="grid-item-container area-r4-led-b"><div class="led-node red" id="led-5"></div><span class="status-label">B</span></div>
 								<div class="grid-item-container area-r4-led-light"><div class="led-node red" id="led-1"></div><span class="status-label">Light</span></div>
@@ -110,7 +117,7 @@ https://unpkg.com/mqtt/dist/mqtt.min.js
 						</div>
 							
 						<div class="sauna-parameter-form-box">
-							<h3 class="form-section-header">การตั้งค่าพารามิเตอร์ระบบซาวน่า</h3>
+							<h3 class="form-section-header">การตั้งค่าระบบซาวน่า&nbsp;<label id="LabelVer"></label></h3>
 							<div class="form-inputs-layout-grid">
 								<div class="input-field-group">
 									<label>อุณหภูมิเป้าหมาย</label>
@@ -129,15 +136,15 @@ https://unpkg.com/mqtt/dist/mqtt.min.js
 									</div>
 								</div>
 								<div class="input-field-group">
-									<label>ค่าสัมประสิทธิ์ NTC Beta</label>
+									<label>NTC Beta</label>
 									<input type="number" id="input-ntc-beta" step="1" placeholder="3950">
 								</div>
 								<div class="input-field-group">
-									<label>ค่าความต้านทาน NTCR25</label>
+									<label>NTC R25</label>
 									<input type="number" id="input-ntc-r25" step="1" placeholder="10000">
 								</div>
 								<div class="input-field-group">
-									<label>ตัวต้านทานอนุกรม RSeries</label>
+									<label>R Series</label>
 									<input type="number" id="input-rseries" step="1" placeholder="10000">
 								</div>
 							</div>
@@ -170,8 +177,8 @@ https://unpkg.com/mqtt/dist/mqtt.min.js
 							</div>
 							<div class="water-ntc-grid-layout">
 								<div class="water-input-item"><label>NTC Beta</label><input type="number" id="hot-input-beta" placeholder="3545"></div>
-								<div class="water-input-item"><label>NTCR25</label><input type="number" id="hot-input-r25" placeholder="10000"></div>
-								<div class="water-input-item"><label>RFixed</label><input type="number" id="hot-input-rfixed" placeholder="10000"></div>
+								<div class="water-input-item"><label>NTC R25</label><input type="number" id="hot-input-r25" placeholder="10000"></div>
+								<div class="water-input-item"><label>R Series</label><input type="number" id="hot-input-rfixed" placeholder="10000"></div>
 							</div>
 							<div class="water-action-end">
 								<span id="hot-save-status" class="save-success-toast"></span><span>&nbsp;&nbsp;</span>
@@ -197,8 +204,8 @@ https://unpkg.com/mqtt/dist/mqtt.min.js
 							</div>
 							<div class="water-ntc-grid-layout">
 								<div class="water-input-item"><label>NTC Beta</label><input type="number" id="cold-input-beta" placeholder="3545"></div>
-								<div class="water-input-item"><label>NTCR25</label><input type="number" id="cold-input-r25" placeholder="10000"></div>
-								<div class="water-input-item"><label>RFixed</label><input type="number" id="cold-input-rfixed" placeholder="10000"></div>
+								<div class="water-input-item"><label>NTC R25</label><input type="number" id="cold-input-r25" placeholder="10000"></div>
+								<div class="water-input-item"><label>R Series</label><input type="number" id="cold-input-rfixed" placeholder="10000"></div>
 							</div>
 							<div class="water-action-end">
 								<span id="cold-save-status" class="save-success-toast"></span><span>&nbsp;&nbsp;</span>

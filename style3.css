@@ -70,10 +70,36 @@
 .led-node.red-flash-active2s {animation: emergencyFlashSpeed 2s infinite ease-in-out !important;}
 .led-node.red-flash-active1s {animation: emergencyFlashSpeed 1s infinite ease-in-out !important;}
 .led-node.red-flash-active500ms {animation: emergencyFlashSpeed 0.5s infinite ease-in-out !important;}
+
+.led-node.green-flash-active2s {animation: greenFlashSpeed  2s infinite ease-in-out !important;}
+.led-node.yellow-flash-active2s {animation: yellowFlashSpeed  2s infinite ease-in-out !important;}
+
 @keyframes emergencyFlashSpeed {
 	0%, 100% {
     background-color: #ef4444;
     box-shadow: 0 0 15px rgba(239, 68, 68, 0.8);
+}
+	50% {
+	background-color: #4b5563; /* เปลี่ยนเป็นสีเทาเข้มตอนจังหวะดับเพื่อให้มองเห็นจังหวะตัดกันรวดเร็วชัดเจน */
+	box-shadow: none;
+	}
+}
+
+@keyframes greenFlashSpeed {
+	0%, 100% {
+    background-color: #22c55e;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.6)
+}
+	50% {
+	background-color: #4b5563; /* เปลี่ยนเป็นสีเทาเข้มตอนจังหวะดับเพื่อให้มองเห็นจังหวะตัดกันรวดเร็วชัดเจน */
+	box-shadow: none;
+	}
+}
+
+@keyframes yellowFlashSpeed {
+	0%, 100% {
+    background-color: #eab308;
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.6)
 }
 	50% {
 	background-color: #4b5563; /* เปลี่ยนเป็นสีเทาเข้มตอนจังหวะดับเพื่อให้มองเห็นจังหวะตัดกันรวดเร็วชัดเจน */
@@ -132,7 +158,7 @@
 .area-r2-heater { grid-column: 6 / 8; grid-row: 2; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
 .area-r3-ntc { grid-column: 6 / 8; grid-row: 3; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
 .area-r23-display-temp { grid-column: 8 / 13; grid-row: 2 / 4; justify-content: center; align-items: center; }
-.area-r4-blank1 { grid-column: 1 / 4; grid-row: 4; align-items: flex-start; justify-content: center; }
+.area-r4-blank1 { grid-column: 1 / 4; grid-row: 4; display: flex; flex-direction: column; align-items: center; justify-content: center;  text-align: center; gap: 8px;}
 .area-r4-led-a { grid-column: 4 / 6; grid-row: 4; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
 .area-r4-led-b { grid-column: 6 / 8; grid-row: 4; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
 .area-r4-led-light { grid-column: 8 / 10; grid-row: 4; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
