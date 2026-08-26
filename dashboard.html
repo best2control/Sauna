@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <!-- 1. ส่วนแผงควบคุมการเลือกโหมดและช่วงเวลา -->
+    <div class="control-panel">
+        <div class="mode-toggle">
+            <button class="mode-btn active" id="btn-daily">รายวัน</button>
+            <button class="mode-btn" id="btn-monthly">รายเดือน</button>
+        </div>
+        
+        <div class="filter-area">
+            <label id="filter-label" for="time-picker">เลือกวันที่:</label>
+            <input type="date" id="time-picker" class="date-picker" value="2026-08-26">
+        </div>
+    </div>
+
+    <!-- 2. ส่วนแสดงผลกล่องการ์ดสรุปผลระบบ Flexbox (Cards Grid) -->
+    <div class="cards-grid">
+
+        <!-- การ์ดที่ 1: อุปกรณ์ประเภท Sauna (ปกติ ยอดรวม Error = 0) -->
+        <div class="device-card" style="border-top-color: var(--color-sauna);">
+            <div class="card-header">
+                <span class="device-id">ESP_6E043C</span>
+                <span class="role-badge role-sauna">Sauna</span>
+            </div>
+            <div class="card-body">
+                <div class="stat-row">
+                    <span class="stat-label">Online:</span>
+                    <span class="stat-value">24:00</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Heater On:</span>
+                    <span class="stat-value">05:30</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Run Time:</span>
+                    <span class="stat-value">08:15</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- การ์ดที่ 2: อุปกรณ์ประเภท HotWater (กรณีมี Error สะสมรวม 4 ครั้ง) -->
+        <div class="device-card" style="border-top-color: var(--color-hotwater);">
+            <div class="card-header">
+                <span class="device-id">ESP_7B128A</span>
+                <span class="role-badge role-hotwater">HotWater</span>
+            </div>
+            <div class="card-body">
+                <div class="stat-row">
+                    <span class="stat-label">Online:</span>
+                    <span class="stat-value">18:40</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Heater On:</span>
+                    <span class="stat-value">12:10</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Run Time:</span>
+                    <span class="stat-value">17:50</span>
+                </div>
+            </div>
+            <!-- แถบปุ่มกด ⚠️ ข้อผิดพลาด ยืดกางรายละเอียดลงล่างแบบเป็นเอกเทศเฉพาะกล่องนี้ -->
+            <div class="card-alert-bar">
+                <span class="alert-text">⚠️ ข้อผิดพลาด</span>
+                <span class="total-error-badge">4 ครั้ง</span>
+            </div>
+            <div class="error-expandable">
+                <div class="error-list-wrapper">
+                    <div class="error-title">รายละเอียดประวัติข้อผิดพลาด</div>
+                    <div class="error-list">
+                        <div class="error-item"><span class="error-name">Overheat Status</span><span class="error-badge badge-safe">0</span></div>
+                        <div class="error-item"><span class="error-name">I2C Error</span><span class="error-badge badge-danger">3</span></div>
+                        <div class="error-item"><span class="error-name">Thermo Error</span><span class="error-badge badge-safe">0</span></div>
+                        <div class="error-item"><span class="error-name">NTC Status</span><span class="error-badge badge-danger">1</span></div>
+                        <div class="error-item"><span class="error-name">System Lockdown</span><span class="error-badge badge-safe">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- การ์ดที่ 3: อุปกรณ์ประเภท Coolwater (ปกติ ยอดรวม Error = 0) -->
+        <div class="device-card" style="border-top-color: var(--color-coldwater);">
+            <div class="card-header">
+                <span class="device-id">ESP_8A99DF</span>
+                <span class="role-badge role-coldwater">Coolwater</span>
+            </div>
+            <div class="card-body">
+                <div class="stat-row">
+                    <span class="stat-label">Online:</span>
+                    <span class="stat-value">22:15</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Chiller On:</span>
+                    <span class="stat-value">14:20</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Run Time:</span>
+                    <span class="stat-value">21:45</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    /* --- สคริปต์ควบคุมระบบปฏิทิน และ คุมการกดคลิกแผงแจ้งเตือนเพื่อสั่งกางขยายการ์ดอิสระ --- */
+    const btnDaily = document.getElementById('btn-daily');
+    const btnMonthly = document.getElementById('btn-monthly');
+    const filterLabel = document.getElementById('filter-label');
+    const timePicker = document.getElementById('time-picker');
+
+    btnDaily.addEventListener('click', () => {
+        btnDaily.classList.add('active');
+        btnMonthly.classList.remove('active');
+        filterLabel.innerText = 'เลือกวันที่:';
+        timePicker.type = 'date';
+        timePicker.value = '2026-08-26';
+    });
+
+    btnMonthly.addEventListener('click', () => {
+        btnMonthly.classList.add('active');
+        btnDaily.classList.remove('active');
+        filterLabel.innerText = 'เลือกเดือน:';
+        timePicker.type = 'month';
+        timePicker.value = '2026-08';
+    });
+
+    // กลไกคำสั่งกางขยาย Flexbox: เมื่อยิงคลาส active การ์ดใบนั้นจะไหลลงยาวคนเดียว โดยเพื่อนข้างๆ ความสูงคงเดิมเป๊ะครับ
+    document.querySelectorAll('.card-alert-bar').forEach(alertBar => {
+        alertBar.style.cursor = 'pointer'; 
+        alertBar.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const targetedCard = alertBar.closest('.device-card');
+            if (targetedCard) {
+                targetedCard.classList.toggle('active');
+            }
+        });
+    });
+</script>
+
+<script src="render_dashboard.js"></script>
+<script src="fetch_summary.js"></script>
+</body>
+</html>
