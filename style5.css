@@ -128,9 +128,8 @@ header h1 {
     height: 200px; 
 }
 
-/* ปลดแอกความสูงรายกล่องการ์ดใบที่ถูกกดคลิกขยายตัวข้ามมิติลงล่างใบเดียวอิสระ */
 .device-card.active {
-    height: max-content; 
+    height: auto; 
 }
 
 .device-card:hover {
@@ -239,7 +238,7 @@ header h1 {
 }
 
 .device-card.active .error-expandable {
-    max-height: 250px;
+    max-height: 400px; /* ยืดหยุ่นตามเนื้อหาจริง แต่กางได้สูงสุดไม่เกิน 400px */
     border-top: 1px solid #eef0f3;
 }
 
